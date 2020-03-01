@@ -1,0 +1,339 @@
+@media screen and (min-width: 500px) and (max-width: 800px)
+{
+    #wrapper
+    {
+        font-family: Georgia, Cambria;   
+        background-image: linear-gradient(red,pink,blue);
+        padding: 10px;
+    }
+    #ad2
+    {
+        position: relative;
+        left: 15%;
+        bottom: 30px;
+        width: 600px;
+        height: 280px;
+    }
+    #pitch
+    {
+        width: 630px; 
+        position: relative;
+        right: -10%;
+        bottom: 90px;
+    }
+    #korg
+    {
+        position: relative;
+        left: 88%;
+    }
+    #sidfooter
+    {
+        width: 98%; 
+        height: 100%;
+    } 
+    #sidfooter a
+    {
+        padding: 1px;
+    }
+    #sidfooter_0
+    {
+        width: 700px; 
+        height: 100%;
+    } 
+    .headhr1
+    {
+        width: 720px;
+    }
+     #sidfooter_0 a
+    {
+        padding: 1px;
+    } 
+    .socialbild
+    {
+       width: 2%;
+       height: 2%;
+    }
+    .pren
+    {
+        position: relative;
+        left: 20%;
+
+    }
+    #pren_0
+    {
+        position: relative;
+        left: 20%;
+
+    }
+    #logobild
+    {
+        position: relative;
+        left: 25%;
+        bottom: 30px;
+        width: 40%;
+        height: 40%;
+    }
+    #navigationslinks
+    {
+        display: block;
+        position: relative;
+        top: 87px;
+        left: 20px;
+    }
+    #navigationslinks a
+    {
+       padding: 10px;
+    }
+    #box
+    {
+        width: 700px;
+        height: 350px;
+        position: relative;
+        left: 1%;
+        bottom: 100px;
+    }
+    .probox
+    {   
+        border: 1px solid #fff;
+        width: 18%;
+        height: 97%;
+        display: inline-block;
+    }
+    #aboutbox
+    {
+        width: 630px;
+        position: relative;
+        left: 10%;
+        top: -60px;
+    }
+    #all
+    {
+        width: 62.5%;
+        margin-left: -195px;
+        margin-bottom: 90px;
+    } 
+    #all2
+    {
+        width: 83%;
+        position: relative;
+        left: 15%;
+    }
+     #resetbtn
+    {
+        position: relative;
+        left: 0px;
+    }
+     #main
+    {
+        width: 75%;
+    }
+    #leftmenu
+    {
+        display: none;
+    }
+    #spechr
+    {
+        display: none;
+    }
+    #spectxt
+    {
+        position: relative;
+        left: -15%;
+        bottom: 430px;
+    }
+    #spechr1
+    {
+        display: none;
+    }
+    #spechr2
+    {
+        display: none;
+    }
+    #varuborder
+    {
+        width: 90%;
+        height: 330px;
+        position: relative;
+        bottom: 400px;
+        left: 20%;
+    }
+    #ellerword
+    {
+        position: relative;
+        bottom: 420px;
+        left: 65%;
+    }
+    #shopbox
+    {
+        width: 680px;
+        height: 500px;
+        position: relative;
+        left: 5%;
+        bottom: 110px;
+    }
+     #shoptitle
+    {
+        position: relative;
+        left: -35%;
+    }
+     #shoptitle_2
+    {
+        position: relative;
+        left: -30%;
+    }
+     .title
+    {
+        position: relative;
+        left: 5%;
+    }
+    #desc
+    {
+        position: relative;
+        left: -47%;
+    }
+     #desc_0
+    {
+        position: relative;
+        left: -50%;
+    }
+     .descbox_0 p
+    {
+        position: relative;
+        left: -15%;
+        font-size: 15px;
+    }
+  .descbox_6 p
+    {
+    position: relative;
+    right: 10%;
+    bottom: 400px;
+
+    }
+     
+    .produktsbild
+    {
+        width: 25%;
+        height: 300px;
+    }
+    #deltext
+    {
+        position: relative;
+        left: -23%;
+    }
+     #deltext_0
+    {
+        position: relative;
+        left: -40%;
+    }
+     #deltext_1
+    {
+        position: relative;
+        left: -40%;
+    }
+    #shoptitle_6
+    {
+        position: relative;
+        right: 30%;
+        bottom: 400px;
+        padding: 10px;
+    }
+      #shoptitle_7
+    {
+        position: relative;
+        left: 40%;
+        bottom: 400px;
+        padding: 10px;
+    }
+    #nmbrbox_1
+    {
+        position: relative;
+        left: 30%;
+        bottom: 400px;
+    }
+     #nmbrbox_4
+    {
+        position: relative;
+        left: 30%;
+        bottom: 400px;
+    }
+    .descbox p
+    {
+        position: relative;
+        left: -1%;
+    }
+    #shoppingslogin
+    {
+        width: 72%;
+        position: relative;
+        bottom: 420px;
+        left: 23%;
+        padding-left: 120px;
+    }
+    #all3
+    {
+        width: 64%;
+        position: absolute;
+        left: 9%;
+        bottom: 200px;
+    } 
+    #searchtext
+    {
+        position: absolute;
+        left: 75%;
+    }
+    #ad
+    {
+        position: relative;
+        left: 10%;
+        top: 10px;
+        width: 650px;
+    }
+     #ad_11
+    {
+        position: relative;
+        left: 10%;
+        top: 10px;
+        width: 650px;
+    }
+    #center2
+    {
+        position: relative;
+        right: -10%;
+        bottom: 120px;
+        color: red;
+        font-style: italic;
+        font-size: 20px;
+    }
+    #center
+    {
+        position: relative;
+        left: 20%;
+        top: 20%;
+    }
+    #just2
+    {
+        position: relative;
+        left: 50%;
+        top: -7%;
+    }
+    #selectmeny
+    {
+        display: none;
+      
+    }
+    #shoptitle_3
+    {   
+        position: relative;
+        right: 36%;
+        bottom: 390px;
+    }
+     #shoptitle_5
+    {   
+        position: relative;
+        right: 10%;
+        bottom: 390px;
+    }
+
+}
+
+
