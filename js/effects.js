@@ -1,15 +1,15 @@
-var a = document.getElementById("korg");
+const a = document.getElementById("korg");
 a.addEventListener("mouseover", showvaru(), false);
 a.addEventListener("mouseout", hidevaru(), false);
-function show()
+const show = () =>
 {
 	$("#searchtext").fadeToggle(2000);
 }
-function showvaru()
+const showvaru => ()
 {
 	$("#varu").show(1000);
 }
-function hidevaru()
+const hidevaru => ()
 {
 	$("#varu").hide(1000);
 }
