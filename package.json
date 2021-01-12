@@ -1,0 +1,13 @@
+{
+  "name": "e-handelprojekt",
+  "version": "1.0.0",
+  "main": "js/effects.js",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "author": "Fadi Hanna",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jquery": "^3.5.5"
+  }
+}
