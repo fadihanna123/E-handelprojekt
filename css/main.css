@@ -1,8 +1,14 @@
 #wrapper {
   font-family: Cambira, Georgia;
-  background-image: -o-linear-gradient(#c0c0c0, #add8e6, #ffffff);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c0c0c0), color-stop(#add8e6), to(#ffffff));
-  background-image: linear-gradient(#c0c0c0, #add8e6, #ffffff);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#c0c0c0),
+    color-stop(#add8e6),
+    to(#fff)
+  );
+  background-image: linear-gradient(#c0c0c0, #add8e6, #fff);
   width: 96%;
 }
 
@@ -94,7 +100,7 @@ descbox_0 {
   border: 1px solid #000;
   width: 30%;
   height: 330px;
-  margin: 0px auto;
+  margin: 0 auto;
   position: relative;
   bottom: 610px;
   padding: 10px;
@@ -131,7 +137,7 @@ descbox_0 {
   display: none;
   background: #000;
   float: "right";
-  color: #ffffff;
+  color: #fff;
   width: 12%;
   height: auto;
   border-radius: 10px;
@@ -292,7 +298,14 @@ descbox_0 {
 @media screen and (min-width: 500px) and (max-width: 800px) {
   #wrapper {
     font-family: Cambira, Georgia;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), color-stop(#ffc0cb), to(#0000ff));
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#ff0000),
+      color-stop(#ffc0cb),
+      to(#0000ff)
+    );
     background-image: -o-linear-gradient(#ff0000, #ffc0cb, #0000ff);
     background-image: linear-gradient(#ff0000, #ffc0cb, #0000ff);
     padding: 10px;
@@ -1079,13 +1092,19 @@ descbox_0 p {
   bottom: 100px;
   width: 40%;
   height: 80%;
-  margin: 0px auto;
+  margin: 0 auto;
   border: 1px solid #000;
   font-size: 20px;
   padding: 10px;
-  background-image: -o-linear-gradient(#ffffed, #add8e6, #ffffff);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffed), color-stop(#add8e6), to(#ffffff));
-  background-image: linear-gradient(#ffffed, #add8e6, #ffffff);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffffed),
+    color-stop(#add8e6),
+    to(#fff)
+  );
+  background-image: linear-gradient(#ffffed, #add8e6, #fff);
 }
 
 #totalt {
@@ -1276,6 +1295,7 @@ descbox_0 p {
     height: 40%;
   }
 }
+
 #sidfooter {
   background: #000;
   color: #ffffff;
@@ -1300,19 +1320,23 @@ descbox_0 p {
     width: 375px;
     height: 100%;
   }
+
   #sidfooter_0 .socialbild {
     width: 5%;
     height: 5%;
   }
+
   #sidfooter_0 a {
     padding-left: 2px;
   }
 }
+
 @media screen and (min-width: 500px) and (max-width: 800px) {
   #sidfooter {
     width: 98%;
     height: 100%;
   }
+
   #sidfooter a {
     padding: 1px;
   }
@@ -1321,10 +1345,12 @@ descbox_0 p {
     width: 700px;
     height: 100%;
   }
+
   #sidfooter_0 a {
     padding: 1px;
   }
 }
+
 .navlinks {
   float: "right";
   padding: 10px;
@@ -1338,10 +1364,12 @@ descbox_0 p {
   #navigationslinks {
     display: none;
   }
+
   #navigationslinks a {
     padding: 10px;
   }
 }
+
 @media screen and (min-width: 500px) and (max-width: 800px) {
   #navigationslinks {
     display: block;
@@ -1349,14 +1377,15 @@ descbox_0 p {
     top: 87px;
     left: 20px;
   }
+
   #navigationslinks a {
     padding: 10px;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 100%;
   list-style: none;
