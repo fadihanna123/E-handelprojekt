@@ -1,0 +1,293 @@
+#{selector(specTxt7)} {
+  position: $rel;
+  right: -300px;
+  bottom: 400px;
+  font-size: 22px;
+  font-family: $font2;
+}
+
+#{selector(specTxt)} {
+  position: $rel;
+  left: -5%;
+  bottom: 400px;
+}
+
+#{selector(specTxt0)} {
+  position: $rel;
+  left: -14%;
+  bottom: 430px;
+}
+
+#{selector(pris0)} {
+  position: $rel;
+  right: 50%;
+  bottom: 420px;
+  font-size: 25px;
+}
+
+#{selector(pris1)} {
+  position: $rel;
+  right: 50%;
+  bottom: 420px;
+  font-size: 25px;
+}
+
+#{selector(pris2)} {
+  position: $rel;
+  right: -40%;
+  bottom: 420px;
+  font-size: 25px;
+}
+
+#{selector(pris3)} {
+  position: $rel;
+  right: 50%;
+  bottom: 420px;
+  font-size: 25px;
+}
+
+#{selector(pris4)} {
+  position: $rel;
+  right: -50%;
+  bottom: 420px;
+  font-size: 25px;
+}
+
+#{selector(descBox)} {
+  #{selector(para)} {
+    position: $rel;
+    right: 15%;
+    bottom: 400px;
+    font-size: 22px;
+    font-family: $font2;
+  }
+}
+
+#{selector(delTxt)} {
+  position: $rel;
+  right: 28%;
+}
+
+#{selector(delTxt0)} {
+  position: $rel;
+  right: 43%;
+}
+
+#{selector(delTxt1)} {
+  position: $rel;
+  right: 46%;
+}
+
+#{selector(descBox0)} {
+  #{selector(para)} {
+    position: $rel;
+    right: 50px;
+    bottom: 420px;
+    font-size: 22px;
+    font-family: $font2;
+  }
+}
+
+#{selector(nmbrTxt)} {
+  width: 20%;
+  height: 20%;
+  position: $rel;
+  right: -10%;
+}
+
+#{selector(nmbrTxt0)} {
+  width: 20%;
+  height: 20%;
+  position: $rel;
+  right: -10%;
+}
+
+#{selector(nmbrTxt1)} {
+  width: 20%;
+  height: 20%;
+  position: $rel;
+  right: 50%;
+}
+
+#{selector(nmbrTxt3)} {
+  width: 20%;
+  height: 20%;
+  position: $rel;
+  right: 50%;
+}
+
+#{selector(nmbrTxt4)} {
+  width: 20%;
+  height: 20%;
+  position: $rel;
+  right: 50%;
+}
+
+#{selector(products)} {
+  position: $rel;
+  left: 5%;
+  top: 60%;
+}
+
+#{selector(pitch)} {
+  position: $rel;
+  right: -5%;
+  bottom: 100px;
+  width: 40%;
+  height: 80%;
+  margin: 0px auto;
+  border: 1px $solidbrd color(black);
+  font-size: 20px;
+  padding: 10px;
+  background-image: -o-linear-gradient(
+    color(lightYellow),
+    color(lightBlue),
+    color(white)
+  );
+  background-image: -webkit-gradient(
+    $linear,
+    $leftPos $topPos,
+    $leftPos $bottomPos,
+    from(color(lightYellow)),
+    color-stop(color(lightBlue)),
+    to(color(white))
+  );
+  background-image: linear-gradient(
+    color(lightYellow),
+    color(lightBlue),
+    color(white)
+  );
+}
+
+#{selector(totalt)} {
+  position: $abs;
+  left: 1%;
+  top: 80px;
+  padding-left: 170px;
+}
+
+#{selector(varuTxt)} {
+  text-align: center;
+}
+
+#{selector(cntr1)} {
+  margin-left: 110px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  #{selector(delTxt)} {
+    position: $rel;
+    right: 240px;
+  }
+
+  #{selector(pitch)} {
+    width: 95%;
+  }
+
+  #{selector(specTxt)} {
+    position: $rel;
+    left: 1.5%;
+    bottom: 430px;
+  }
+
+  #{selector(numberTxt)} {
+    position: $rel;
+    left: -100px;
+  }
+
+  #{selector(numberTxt3)} {
+    position: $rel;
+    left: -150px;
+  }
+
+  #{selector(numberTxt1)} {
+    position: $rel;
+    left: -130px;
+  }
+
+  #{selector(numberTxt0)} {
+    position: $rel;
+    left: -10px;
+  }
+
+  #{selector(specTxt7)} {
+    position: $rel;
+    left: 25%;
+    bottom: 450px;
+    font-size: 15px;
+  }
+
+  #{selector(delTxt)} {
+    position: $rel;
+    left: -36%;
+  }
+
+  #{selector(pris4)} {
+    position: $rel;
+    top: -450px;
+    right: -120px;
+  }
+
+  #{selector(delTxt0)} {
+    position: $rel;
+    left: -55%;
+  }
+
+  #{selector(delTxt1)} {
+    position: $rel;
+    left: -60%;
+  }
+
+  #{selector(cntr1)} {
+    position: $abs;
+    left: -100px;
+  }
+
+  #{selector(totalt)} {
+    position: $abs;
+    top: 80px;
+    left: -100px;
+  }
+
+  #{selector(products)} {
+    display: $block;
+    position: $rel;
+    left: 20%;
+    bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  #{selector(pitch)} {
+    width: 630px;
+    position: $rel;
+    right: -10%;
+    bottom: 90px;
+  }
+
+  #{selector(specTxt)} {
+    position: $rel;
+    left: -15%;
+    bottom: 430px;
+  }
+
+  #{selector(delTxt)} {
+    position: $rel;
+    left: -23%;
+  }
+
+  #{selector(delTxt0)} {
+    position: $rel;
+    left: -40%;
+  }
+
+  #{selector(delTxt1)} {
+    position: $rel;
+    left: -40%;
+  }
+
+  #{selector(srchTxt)} {
+    position: $abs;
+    left: 75%;
+  }
+}

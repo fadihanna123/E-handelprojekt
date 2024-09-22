@@ -1,0 +1,433 @@
+#{selector(container)} {
+  font-family: $font;
+  background-image: -o-linear-gradient(
+    color(silver),
+    color(lightBlue),
+    color(white)
+  );
+  background-image: -webkit-gradient(
+    $linear,
+    $leftPos $topPos,
+    $leftPos $bottomPos,
+    from(color(silver)),
+    color-stop(color(lightBlue)),
+    to(color(white))
+  );
+  background-image: linear-gradient(
+    color(silver),
+    color(lightBlue),
+    color(white)
+  );
+  width: 96%;
+}
+
+#{selector(shopBox)} {
+  width: 50%;
+  height: 500px;
+  border: 1px $solidbrd color(black);
+  position: $rel;
+  left: 20%;
+  bottom: 210px;
+}
+
+#{selector(nmbrBox)} {
+  position: $rel;
+  left: 35%;
+  bottom: 400px;
+}
+
+#{selector(nmbrBox1)} {
+  position: $rel;
+  left: 30%;
+  bottom: 400px;
+}
+
+#{selector(nmbrBox4)} {
+  position: $rel;
+  left: 30%;
+  bottom: 380px;
+}
+
+#{selector(nmbrBox7)} {
+  position: $rel;
+  left: 50%;
+  bottom: 400px;
+}
+
+#{selector(descBox)} {
+  text-align: $rightPos;
+}
+
+#{selector(descBox0)} {
+  text-align: $rightPos;
+}
+
+#{selector(box)} {
+  border: 1px $solidbrd color(black);
+  width: 50%;
+  height: 350px;
+  position: $rel;
+  left: 20%;
+  bottom: 200px;
+  padding: 10px;
+}
+
+#{selector(proBox)} {
+  border: 1px $solidbrd #fff;
+  width: 15%;
+  height: 97%;
+  display: $inblock;
+}
+
+#{selector(prenBox0)} {
+  position: $rel;
+  left: 40%;
+}
+
+#{selector(ad)} {
+  position: $rel;
+  left: 40%;
+  bottom: 60px;
+  border: 1px $solidbrd color(black);
+  width: 30%;
+  height: 200px;
+  font-size: 20px;
+}
+
+#{selector(aboutBox)} {
+  position: $rel;
+  left: 35%;
+  bottom: 130px;
+  border: 1px $solidbrd color(black);
+  width: 40%;
+  height: 310px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#{selector(varuBorder)} {
+  border: 1px $solidbrd color(black);
+  width: 30%;
+  height: 330px;
+  margin: 0px $auto;
+  position: $rel;
+  bottom: 610px;
+  padding: 10px;
+}
+
+#{selector(all)} {
+  border: 1px $solidbrd color(black);
+  width: 30.2%;
+  position: $abs;
+  left: 33.8%;
+  bottom: 100px;
+  padding-left: 150px;
+}
+
+#{selector(all2)} {
+  border: 1px $solidbrd color(black);
+  width: 30.2%;
+  position: $abs;
+  left: 33.8%;
+  bottom: 42px;
+  padding-left: 150px;
+}
+
+#{selector(all3)} {
+  border: 1px $solidbrd color(black);
+  width: 30%;
+  position: $abs;
+  left: 33.8%;
+  bottom: 160px;
+  padding-left: 150px;
+}
+
+#{selector(varu)} {
+  display: $none;
+  background: color(black);
+  float: $rightPos;
+  color: color(white);
+  width: 12%;
+  height: $auto;
+  border-radius: 10px;
+}
+
+#{selector(leftMenu)} {
+  display: $block;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#{selector(main)} {
+  clear: both;
+}
+
+#{selector(socialLinks)} {
+  position: $rel;
+  left: 85%;
+  top: -20px;
+}
+
+#{selector(socialLinks0)} {
+  position: $abs;
+  left: 85%;
+  bottom: -370px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  #{selector(container)} {
+    font-family: $font;
+    background: color(gray);
+    width: 99%;
+  }
+
+  #{selector(leftMenu)} {
+    display: $none;
+  }
+
+  #{selector(aboutBox)} {
+    width: 95%;
+    height: 100%;
+    position: $rel;
+    left: 2%;
+    top: -50px;
+  }
+
+  #{selector(main)} {
+    width: 90%;
+    margin-top: 2px;
+  }
+
+  #{selector(socialLinks)} {
+    position: $rel;
+    left: 30%;
+    top: 5px;
+  }
+
+  #{selector(box)} {
+    width: 370px;
+    height: 500px;
+    position: $rel;
+    left: 1%;
+    bottom: 100px;
+    table-layout: fixed;
+  }
+
+  #{selector(proBox)} {
+    border: 1px $solidbrd #fff;
+    width: 30%;
+    height: 50%;
+    display: inline-block;
+  }
+
+  #{selector(all)} {
+    width: 85%;
+    margin-left: -130px;
+    margin-bottom: 120px;
+    padding: 0px;
+  }
+
+  #{selector(all2)} {
+    width: 98%;
+    height: 450px;
+    position: $rel;
+    left: 4%;
+    bottom: 200px;
+    padding: 4px;
+  }
+
+  #{selector(varuBorder)} {
+    width: 100%;
+    height: 330px;
+    position: $rel;
+    bottom: 400px;
+    left: 1%;
+    padding: 5px;
+  }
+
+  #{selector(varu)} {
+    display: $none;
+  }
+
+  #{selector(shopBox)} {
+    width: 380px;
+    height: 500px;
+    position: $rel;
+    left: 1%;
+    bottom: 110px;
+  }
+
+  #{selector(descBox0)} {
+    #{selector(para)} {
+      position: $rel;
+      left: 1%;
+      font-size: 12px;
+    }
+  }
+
+  #{selector(nmbrBox1)} {
+    position: $rel;
+    left: 30%;
+    bottom: 400px;
+  }
+
+  #{selector(nmbrBox4)} {
+    position: $rel;
+    left: 50%;
+    bottom: 400px;
+  }
+
+  #{selector(descBox)} {
+    #{selector(para)} {
+      position: $rel;
+      left: -1%;
+      font-size: 14px;
+    }
+  }
+
+  #{selector(shoppingsLogin)} {
+    width: 100%;
+    position: $rel;
+    bottom: 420px;
+    left: 1%;
+    padding-left: 10px;
+  }
+
+  #{selector(all3)} {
+    width: 85%;
+    position: $abs;
+    left: 20px;
+    bottom: 300px;
+    padding: 0px;
+  }
+
+  #{selector(ad)} {
+    position: $rel;
+    left: 2%;
+    top: -2px;
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  #{selector(container)} {
+    font-family: $font;
+    background-image: -webkit-gradient(
+      $linear,
+      $leftPos $topPos,
+      $leftPos $bottomPos,
+      from(color(red)),
+      color-stop(color(pink)),
+      to(color(blue))
+    );
+    background-image: -o-linear-gradient(color(red), color(pink), color(blue));
+    background-image: linear-gradient(color(red), color(pink), color(blue));
+    padding: 10px;
+  }
+
+  #{selector(box)} {
+    width: 700px;
+    height: 350px;
+    position: $rel;
+    left: 1%;
+    bottom: 100px;
+  }
+
+  #{selector(proBox)} {
+    border: 1px $solidbrd color(white);
+    width: 18%;
+    height: 97%;
+    display: $inblock;
+  }
+
+  #{selector(aboutBox)} {
+    width: 630px;
+    position: $rel;
+    left: 10%;
+    top: -60px;
+  }
+
+  #{selector(all)} {
+    width: 62.5%;
+    margin-left: -195px;
+    margin-bottom: 90px;
+  }
+
+  #{selector(all2)} {
+    width: 83%;
+    position: $rel;
+    left: 15%;
+  }
+
+  #{selector(main)} {
+    width: 75%;
+  }
+
+  #{selector(leftMenu)} {
+    display: $none;
+  }
+
+  #{selector(varuBorder)} {
+    width: 90%;
+    height: 330px;
+    position: $rel;
+    bottom: 400px;
+    left: 20%;
+  }
+
+  #{selector(shopBox)} {
+    width: 680px;
+    height: 500px;
+    position: $rel;
+    left: 5%;
+    bottom: 110px;
+  }
+
+  #{selector(nmbrBox1)} {
+    position: $rel;
+    left: 30%;
+    bottom: 400px;
+  }
+
+  #{selector(nmbrBox4)} {
+    position: $rel;
+    left: 30%;
+    bottom: 400px;
+  }
+
+  #{selector(descBox)} {
+    #{selector(para)} {
+      position: $rel;
+      left: -1%;
+    }
+  }
+
+  #{selector(shoppingsLogin)} {
+    width: 72%;
+    position: $rel;
+    bottom: 420px;
+    left: 23%;
+    padding-left: 120px;
+  }
+
+  #{selector(all3)} {
+    width: 64%;
+    position: $abs;
+    left: 9%;
+    bottom: 200px;
+  }
+
+  #{selector(ad)} {
+    position: $rel;
+    left: 10%;
+    top: 10px;
+    width: 650px;
+  }
+
+  #{selector(ad11)} {
+    position: $rel;
+    left: 10%;
+    top: 10px;
+    width: 650px;
+  }
+}

@@ -1,0 +1,55 @@
+#{selector(sidFooter)} {
+  background: color(black);
+  color: color(white);
+  padding: 10px;
+}
+
+#{selector(sidFooter0)} {
+  background: color(black);
+  color: color(white);
+  padding: 10px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  #{selector(sidFooter)} {
+    #{selector(link)} {
+      padding: 5px;
+      width: 88%;
+      height: 20px;
+      font-size: 10px;
+    }
+  }
+
+  #{selector(sidFooter0)} {
+    #{selector(socialBild)} {
+      width: 5%;
+      height: 5%;
+    }
+
+    width: 375px;
+    height: 100%;
+    #{selector(link)} {
+      padding-left: 2px;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  #{selector(sidFooter)} {
+    width: 98%;
+    height: 100%;
+
+    #{selector(link)} {
+      padding: 1px;
+    }
+  }
+
+  #{selector(sidFooter0)} {
+    width: 700px;
+    height: 100%;
+
+    #{selector(link)} {
+      padding: 1px;
+    }
+  }
+}

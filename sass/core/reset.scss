@@ -1,0 +1,18 @@
+// Global settings
+#{map-get($selectorMap, global)} {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+  list-style: $none;
+  outline: 0;
+}
+
+// Global settings
+#{map-get($selectorMap, img)} {
+  display: $block;
+  max-width: 100%;
+  width: $auto;
+  height: $auto;
+}

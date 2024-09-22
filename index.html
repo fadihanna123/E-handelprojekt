@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/Favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/Favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="Styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/tab.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/mobile.css" />
+    <title>Billigt & Begagnade - Startsida</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <a class="navlinks" href="login.html">Logga in</a>
+        <a class="navlinks" href="register.html">Skapa ett konto</a>
+        <br /><br />
+        <a href="#" id="korg">
+          Varukorg
+          <img
+            alt="varukorgsbild"
+            onmouseover="showvaru()"
+            onmouseout="hidevaru()"
+            id="varukorgsbild"
+            src="Images/shopping.png"
+          /> </a
+        ><br />
+        <div id="varu" onfocus="stop()">
+          Antal varor:
+          <br />
+          En penna
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          10 kr<br />
+          Fidget Spinner
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          5 kr<br />
+          <hr id="varuhr" />
+          <br />
+          Total: &nbsp; 15 kr<br /><br />
+          <form action="shopping.html">
+            <input type="button" id="varubtn" value="Gå vidare" />
+          </form>
+        </div>
+        <nav id="navigationslinks">
+          &rsaquo;<b>Startsida</b>
+          <a href="products.html">Produkter</a>
+          <a href="shopping.html">Varukorg</a>
+          <a href="contact.html">Kontakta oss</a>
+          <a href="about.html">Om oss</a>
+        </nav>
+        <a href="index.html">
+          <img id="logobild" alt="Logobild" src="Images/Logo.jpg" />
+        </a>
+        <br />
+        <a href="#" id="searchlink" onclick="show()">Sök</a><br />
+        <form id="searchform" action="#">
+          <input id="searchtext" type="text" placeholder="Sök här" /><br />
+        </form>
+        <form action="#">
+          <select id="selectmeny" onchange="window.location=this.value;">
+            <option value="index.html" selected>Startsida</option>
+            <option value="products.html">Produkter</option>
+            <option value="shopping.html">Varukorg</option>
+            <option value="contact.html">Kontakta oss</option>
+            <option value="about.html">Om oss</option>
+            <option value="register.html">Skapa ett konto</option>
+            <option value="login.html">Logga in</option>
+          </select>
+          <br />
+        </form>
+      </header>
+      <hr class="headhr" />
+      <div id="main">
+        <div id="leftmenu">
+          &rsaquo;<b>Startsida</b><br />
+          <a href="products.html">Produkter</a><br />
+          <a href="shopping.html">Varukorg</a><br />
+          <a href="contact.html">Kontakta oss</a><br />
+          <a href="about.html">Om oss</a><br />
+        </div>
+        <br /><br />
+        <div id="ad">
+          <a href="products.html">
+            <img src="Images/animation.gif" alt="animation" id="adbild" /><br />
+            <span id="products">Se produkterna&gt;&gt; </span></a
+          ><br />
+        </div>
+        <br /><br /><br /><br /><br /><br />
+
+        <p id="pitch">
+          <span id="rubrik">Billigast & Begagnade</span> är ett e-shopföretag
+          som säljer begagnade produkter.<br />
+          Vi lägger alltid till löpande olika produkter.
+          <br />
+          För att visa alla produkterna
+          <br />
+          <a href="products.html" id="click">Klicka här</a><br />
+          &larr; Välj någon länk från vänstra meny för att starta!
+        </p>
+      </div>
+      <hr id="spechr" />
+      <hr class="headhr" />
+
+      <footer id="sidfooter">
+        <div id="linklist">
+          <a href="job.html"> Jobba hos oss </a>
+          <a href="about.html"> Om oss </a>
+          <a href="contact.html"> Kontakta oss </a>
+          <a href="login.html"> Logga in </a>
+          <a href="register.html"> Skapa ett konto </a>
+          <a href="shopping.html"> Varukorg </a>
+        </div>
+        <div id="sociallinks">
+          Följ oss
+          <a href="#">
+            <img
+              title="Facebook"
+              alt="Facebook"
+              src="Images/fb.png"
+              class="socialbild"
+            />
+          </a>
+          <a href="#">
+            <img
+              title="Instagram"
+              alt="Instagram"
+              src="Images/Instagram.png"
+              class="socialbild"
+            />
+          </a>
+          <a href="#">
+            <img
+              title="Twitter"
+              alt="Twitter"
+              class="socialbild"
+              src="Images/Twitter.gif"
+            />
+          </a>
+        </div>
+        <div id="pren_0">
+          <form action="#" method="post">
+            Nyhetsbrev:
+            <input type="text" />
+            <input type="button" value="Prenummera" />
+          </form>
+        </div>
+      </footer>
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"
+      ></script>
+      <script src="js/effects.js"></script>
+    </div>
+  </body>
+</html>

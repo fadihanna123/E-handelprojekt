@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="Styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/tab.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/mobile.css" />
+    <title>Billigt & Begagnade - Varukorg</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <a href="login.html" class="navlinks">Logga in</a>
+        <a href="#" class="navlinks">Skapa ett konto</a><br /><br />
+        <br /><br />
+        <a href="#" id="korg"
+          ><br /><br />
+          Varukorg
+          <img
+            alt="Varukorgsbilden"
+            onmouseover="showvaru()"
+            onmouseout="hidevaru()"
+            id="varukorgsbild"
+            src="Images/shopping.png"
+          /> </a
+        ><br />
+        <div id="varu" onfocus="stop()">
+          Antal varor:
+          <br />
+          En penna
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          10 kr<br />
+          Fidget Spinner
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          5 kr<br />
+          <hr id="varuhr" />
+          <br />
+          Total: &nbsp; 15 kr<br /><br />
+          <form action="shopping.html">
+            <input type="button" id="varubtn" value="Gå vidare" />
+          </form>
+        </div>
+        <nav id="navigationslinks">
+          <a href="index.html">Startsida</a>
+          <a href="products.html">Produkter</a>
+          &rsaquo;<b>Varukorg</b>
+          <a href="contact.html">Kontakta oss</a>
+          <a href="about.html">Om oss</a>
+        </nav>
+        <a href="index.html">
+          <img alt="Logobild" id="logobild" src="Images/Logo.jpg" />
+        </a>
+        <br />
+        <a href="#" id="searchlink" onclick="show()">Sök</a><br />
+        <form id="searchform" action="#">
+          <input id="searchtext" type="text" placeholder="Sök här" /><br />
+        </form>
+        <form action="#">
+          <select id="selectmeny" onchange="window.location=this.value;">
+            <option value="index.html">Startsida</option>
+            <option value="products.html">Produkter</option>
+            <option value="shopping.html" selected>Varukorg</option>
+            <option value="contact.html">Kontakta oss</option>
+            <option value="about.html">Om oss</option>
+            <option value="register.html">Skapa ett konto</option>
+            <option value="login.html">Logga in</option>
+          </select>
+          <br />
+        </form>
+      </header>
+      <hr class="headhr" />
+      <div id="main">
+        <div id="leftmenu">
+          <a href="index.html">Startsida</a><br />
+          <a href="products.html">Produkter</a><br />
+          <span><b>&rsaquo;Varukorg</b></span
+          ><br />
+          <a href="contact.html">Kontakta oss</a><br />
+          <a href="about.html">Om oss</a><br />
+        </div>
+        <br /><br />
+        <br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div id="varuborder">
+          <div id="varutext">
+            Antal varor:
+            <br />
+
+            En penna
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            10 kr<br />
+            Fidget Spinner
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            5 kr<br />
+            <hr id="shoppingvaruhr" />
+            <br />
+            <span id="totalt"
+              >Totalt
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              15 kr</span
+            >
+          </div>
+          <form action="#" method="post">
+            <b id="cntr1">Fylla dessa uppgifter gärna för att gå vidare:</b
+            ><br /><br />
+            <table id="form1">
+              <tr>
+                <td>Förnamn:</td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td>Efternamn:</td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td>E-postadress:</td>
+                <td><input type="email" /></td>
+              </tr>
+              <tr>
+                <td>Telefonnummer:</td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td>Kortnummer:</td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td>Utgångsdatum:</td>
+                <td>
+                  <input type="text" class="date" /> /
+                  <input type="text" class="date" />
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="button" value="Gå vidare" /></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <h2 id="ellerword">Eller</h2>
+        <div id="shoppingslogin">
+          <h3 id="left">Logga in</h3>
+          <br /><br /><br />
+          <form action="#" method="post">
+            <table>
+              <tr>
+                <td>E-postadress:</td>
+                <td><input type="email" /></td>
+              </tr>
+              <tr>
+                <td>Lösenord:</td>
+                <td><input type="password" /></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="button" value="Logga in" /></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <hr id="spechr2" />
+        <hr class="headhr1" />
+
+        <footer id="sidfooter_0">
+          <div id="linklist">
+            <a href="job.html"> Jobba hos oss </a>
+            <a href="about.html"> Om oss </a>
+            <a href="contact.html"> Kontakta oss </a>
+            <a href="login.html"><b>Logga in </b></a>
+            <a href="register.html"> Skapa ett konto </a>
+            <a>&rsaquo;<b> Varukorg</b> </a>
+          </div>
+          <div id="sociallinks">
+            Följ oss
+            <a href="#">
+              <img
+                title="Facebook"
+                alt="Facebook"
+                src="Images/fb.png"
+                class="socialbild"
+              />
+            </a>
+            <a href="#">
+              <img
+                title="Instagram"
+                alt="Instagram"
+                src="Images/Instagram.png"
+                class="socialbild"
+              />
+            </a>
+            <a href="#">
+              <img
+                title="Twitter"
+                alt="Twitter"
+                class="socialbild"
+                src="Images/Twitter.gif"
+              />
+            </a>
+          </div>
+          <div id="pren_0">
+            <form action="#" method="post">
+              Nyhetsbrev:
+              <input type="text" />
+              <input type="button" value="Prenummera" />
+            </form>
+          </div>
+        </footer>
+        <script
+          src="https://code.jquery.com/jquery-3.5.1.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"
+        ></script>
+        <script src="js/effects.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

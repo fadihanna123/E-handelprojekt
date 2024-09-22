@@ -1,0 +1,30 @@
+#{selector(navLinks)} {
+  float: $rightPos;
+  padding: 10px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  #{selector(navLinks)} {
+    display: $none;
+  }
+
+  #{selector(navigationsLinks)} {
+    #{selector(link)} {
+      padding: 10px;
+    }
+    display: $none;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  #{selector(navigationsLinks)} {
+    display: $block;
+    position: $rel;
+    top: 87px;
+    left: 20px;
+
+    #{selector(link)} {
+      padding: 10px;
+    }
+  }
+}

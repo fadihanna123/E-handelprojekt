@@ -1,0 +1,42 @@
+#{selector(link)} {
+  text-decoration: $none;
+  color: color(white);
+}
+
+#{selector(korg)} {
+  position: $rel;
+  left: 94%;
+  top: -100%;
+  color: color(white);
+  height: 6%;
+  background: color(black);
+}
+
+#{selector(srchLink)} {
+  position: $abs;
+  left: 90%;
+}
+
+#{selector(click)} {
+  color: color(blue);
+}
+
+#{selector(linkList)} {
+  #{selector(link)} {
+    padding-left: 150px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  #{selector(korg)} {
+    position: $rel;
+    left: 78%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  #{selector(korg)} {
+    position: $rel;
+    left: 88%;
+  }
+}

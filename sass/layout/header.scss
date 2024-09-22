@@ -1,0 +1,58 @@
+#{selector(selectMeny)} {
+  display: $none;
+  width: 90%;
+  margin-left: 20px;
+}
+
+#{selector(navigationsLinks)} {
+  display: $none;
+}
+
+#{selector(logoBild)} {
+  position: $rel;
+  left: 35%;
+  width: 30%;
+  height: 30%;
+  border-radius: 50px;
+}
+
+#{selector(varuKorgsBild)} {
+  width: 1%;
+  height: 1%;
+}
+
+#{selector(srchTxt)} {
+  display: $none;
+  position: $rel;
+  left: 89%;
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  #{selector(selectMeny)} {
+    display: $block;
+    width: 90%;
+    margin-left: 20px;
+  }
+
+  #{selector(logoBild)} {
+    position: $rel;
+    left: 20%;
+    bottom: -10px;
+    width: 60%;
+    height: 40%;
+  }
+
+  #{selector(srchLink)} {
+    display: $none;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  #{selector(logoBild)} {
+    position: $rel;
+    left: 25%;
+    bottom: 30px;
+    width: 40%;
+    height: 40%;
+  }
+}

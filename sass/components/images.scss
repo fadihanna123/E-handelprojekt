@@ -1,0 +1,62 @@
+#{selector(socialBild)} {
+  width: 1%;
+  height: 1%;
+}
+
+#{selector(mini)} {
+  width: 10%;
+  height: 50px;
+  padding-left: 80px;
+}
+
+#{selector(produktsBild)} {
+  width: 30%;
+  height: 250px;
+  padding: 10px;
+}
+
+#{selector(productImg)} {
+  width: 60%;
+  height: 60%;
+  padding: 10px;
+  position: $rel;
+  left: 10%;
+}
+
+#{selector(adBild)} {
+  width: 95%;
+  height: 85%;
+  position: $abs;
+  left: 10px;
+  bottom: 20px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  #{selector(mini)} {
+    position: $rel;
+    right: 18%;
+  }
+
+  #{selector(produktsBild)} {
+    width: 20%;
+    height: 300px;
+  }
+
+  #{selector(adBild)} {
+    position: $rel;
+    left: 1%;
+    bottom: -20px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  #{selector(socialBild)} {
+    width: 2%;
+    height: 2%;
+  }
+
+  #{selector(produktsBild)} {
+    width: 25%;
+    height: 300px;
+  }
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="Styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/tab.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/close.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/loading.gif"
+      type="image/gif"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/next.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/prev.png"
+      type="image/png"
+    />
+    <title>
+      Billigt & Begagnade - Handhållen spelkonsol för barn till salu
+    </title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <a class="navlinks" href="login.html">Logga in</a>
+        <a class="navlinks" href="register.html">Skapa ett konto</a>
+        <br /><br />
+        <a href="#" id="korg">
+          Varukorg
+          <img
+            alt="Varukorgsbilden"
+            onmouseover="showvaru()"
+            onmouseout="hidevaru()"
+            id="varukorgsbild"
+            src="Images/shopping.png"
+          /> </a
+        ><br />
+        <div id="varu" onfocus="stop()">
+          Antal varor:
+          <br />
+          En penna
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          10 kr<br />
+          Fidget Spinner
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          5 kr<br />
+          <hr id="varuhr" />
+          <br />
+          Total: &nbsp; 15 kr<br /><br />
+          <form action="shopping.html">
+            <input type="button" id="varubtn" value="Gå vidare" />
+          </form>
+        </div>
+        <nav id="navigationslinks">
+          <a href="index.html">Startsida</a>
+          <a href="products.html">Produkter</a>
+          <a href="shopping.html">Varukorg</a>
+          <a href="contact.html">Kontakta oss</a>
+          <a href="about.html">Om oss</a>
+        </nav>
+        <a href="index.html">
+          <img alt="Logobild" id="logobild" src="Images/Logo.jpg" />
+        </a>
+        <br />
+        <a href="#" id="searchlink" onclick="show()">Sök</a><br />
+        <form id="searchform" action="#">
+          <input id="searchtext" type="text" placeholder="Sök här" /><br />
+        </form>
+        <form action="#">
+          <select id="selectmeny" onchange="window.location=this.value;">
+            <option value="index.html">Startsida</option>
+            <option value="products.html">Produkter</option>
+            <option value="shopping.html">Varukorg</option>
+            <option value="contact.html">Kontakta oss</option>
+            <option value="about.html">Om oss</option>
+            <option value="register.html">Skapa ett konto</option>
+            <option value="login.html">Logga in</option>
+          </select>
+          <br />
+        </form>
+      </header>
+      <hr class="headhr" />
+      <div id="main">
+        <div id="leftmenu">
+          <a href="index.html">Startsida</a><br />
+          <a href="products.html">Produkter</a><br />
+          <a href="shopping.html">Varukorg</a><br />
+          <a href="contact.html">Kontakta oss</a><br />
+          <a href="about.html">Om oss</a><br />
+        </div>
+        <br /><br /><br /><br /><br /><br />
+        <div id="shopbox">
+          <a
+            href="Images/Spel_1.jpg"
+            data-lightbox="spel"
+            data-title="Spelkonsol"
+          >
+            <img
+              src="Images/Spel_1.jpg"
+              alt="Spelsbox"
+              class="produktsbild" /></a
+          ><br />
+          <a
+            href="Images/Spel_2.jpg"
+            data-lightbox="spel"
+            data-title="Spelkonsol"
+          >
+            <img
+              alt="minibild av spelkonsol"
+              src="Images/Spel_2.jpg"
+              class="mini"
+          /></a>
+          <div class="descbox_0">
+            <h2 id="shoptitle_5">En handhållen spelkonsol för barn</h2>
+            <br />
+            <h4 id="desc_5">Beskrivning</h4>
+            <p id="spectxt">
+              Låt ditt barn utforska gamla spel via denna spelkonsol som har<br />
+              <span id="deltext_1"> massor av spel</span><br />
+            </p>
+            <span id="pris_3">10 kr</span>
+            <div id="nmbrbox">
+              <form action="#" method="post">
+                <table>
+                  <tr>
+                    <td></td>
+                    <td><input type="number" value="1" id="numbertxt_3" /></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <input
+                        type="button"
+                        value="Lägg till i varukorgen"
+                        id="addbtn_3"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr id="spechr" />
+      <hr class="headhr" />
+
+      <footer id="sidfooter">
+        <div id="linklist">
+          <a href="job.html"> Jobba hos oss </a>
+          <a href="about.html"> Om oss </a>
+          <a href="contact.html"> Kontakta oss </a>
+          <a href="login.html"> Logga in </a>
+          <a href="register.html"> Skapa ett konto </a>
+          <a href="shopping.html"> Varukorg </a>
+        </div>
+        <div id="sociallinks">
+          Följ oss
+          <a href="#">
+            <img
+              title="Facebook"
+              alt="Facebook"
+              src="Images/fb.png"
+              class="socialbild"
+            />
+          </a>
+          <a href="#">
+            <img
+              title="Instagram"
+              alt="Instagram"
+              src="Images/Instagram.png"
+              class="socialbild"
+            />
+          </a>
+          <a href="#">
+            <img
+              title="Twitter"
+              alt="Twitter"
+              class="socialbild"
+              src="Images/Twitter.gif"
+            />
+          </a>
+        </div>
+        <br />
+        <div class="pren">
+          <form action="#" method="post">
+            Nyhetsbrev:
+            <input type="text" />
+            <input type="button" value="Prenummera" />
+          </form>
+        </div>
+      </footer>
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+        integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+        crossorigin="anonymous"
+      ></script>
+      <script src="js/effects.js"></script>
+    </div>
+  </body>
+</html>
