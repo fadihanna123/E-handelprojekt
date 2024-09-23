@@ -1,5 +1,5 @@
 #wrapper {
-  font-family: Cambira, Georgia;
+  font-family: Cambria, Georgia, serif;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -9,7 +9,8 @@
     to(#fff)
   );
   background-image: linear-gradient(#c0c0c0, #add8e6, #fff);
-  width: 96%;
+  width: 100%;
+  overflow: hidden;
 }
 
 #shopbox {
@@ -49,7 +50,7 @@
   text-align: "right";
 }
 
-descbox_0 {
+.descbox_0 {
   text-align: "right";
 }
 
@@ -121,7 +122,7 @@ descbox_0 {
   position: absolute;
   left: 33.8%;
   bottom: 42px;
-  padding-left: 150px;
+  text-align: center;
 }
 
 #all3 {
@@ -165,9 +166,9 @@ descbox_0 {
   bottom: -370px;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (width > 400px) and (width < 500px) {
   #wrapper {
-    font-family: Cambira, Georgia;
+    font-family: Cambria, Georgia, serif;
     background: #808080;
     width: 99%;
   }
@@ -215,7 +216,7 @@ descbox_0 {
     width: 85%;
     margin-left: -130px;
     margin-bottom: 120px;
-    padding: 0px;
+    padding: 0;
   }
 
   #all2 {
@@ -248,7 +249,7 @@ descbox_0 {
     bottom: 110px;
   }
 
-  descbox_0 p {
+  .descbox_0 p {
     position: relative;
     left: 1%;
     font-size: 12px;
@@ -285,7 +286,7 @@ descbox_0 {
     position: absolute;
     left: 20px;
     bottom: 300px;
-    padding: 0px;
+    padding: 0;
   }
 
   #ad {
@@ -295,19 +296,19 @@ descbox_0 {
     width: 380px;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 800px) {
+
+@media screen and (width > 500px) and (width < 800px) {
   #wrapper {
-    font-family: Cambira, Georgia;
+    font-family: Cambira, Georgia, serif;
     background-image: -webkit-gradient(
       linear,
       left top,
       left bottom,
-      from(#ff0000),
+      from(#f00),
       color-stop(#ffc0cb),
-      to(#0000ff)
+      to(#00f)
     );
-    background-image: -o-linear-gradient(#ff0000, #ffc0cb, #0000ff);
-    background-image: linear-gradient(#ff0000, #ffc0cb, #0000ff);
+    background-image: linear-gradient(#f00, #ffc0cb, #00f);
     padding: 10px;
   }
 
@@ -320,7 +321,7 @@ descbox_0 {
   }
 
   .probox {
-    border: 1px solid #ffffff;
+    border: 1px solid #fff;
     width: 18%;
     height: 97%;
     display: inline-block;
@@ -415,6 +416,7 @@ descbox_0 {
     width: 650px;
   }
 }
+
 .date {
   width: 10%;
 }
@@ -445,7 +447,7 @@ descbox_0 {
   left: 36%;
   bottom: 25px;
   background: #000;
-  color: #ffffff;
+  color: #fff;
 }
 
 #addbtn_0 {
@@ -453,7 +455,7 @@ descbox_0 {
   left: 25%;
   bottom: 26px;
   background: #000;
-  color: #ffffff;
+  color: #fff;
 }
 
 #addbtn_1 {
@@ -461,7 +463,7 @@ descbox_0 {
   left: 30%;
   bottom: 26px;
   background: #000;
-  color: #ffffff;
+  color: #fff;
 }
 
 #addbtn_7 {
@@ -469,10 +471,10 @@ descbox_0 {
   left: -20%;
   bottom: 26px;
   background: #000;
-  color: #ffffff;
+  color: #fff;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (width > 400px) and (width < 500px) {
   .pren {
     position: relative;
     left: 10%;
@@ -493,14 +495,15 @@ descbox_0 {
     left: 6%;
     bottom: 26px;
     background: #000;
-    color: #ffffff;
+    color: #fff;
   }
 
   #searchform {
     display: block;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 800px) {
+
+@media screen and (width > 500px) and (width < 800px) {
   .pren {
     position: relative;
     left: 20%;
@@ -513,15 +516,16 @@ descbox_0 {
 
   #resetbtn {
     position: relative;
-    left: 0px;
+    left: 0;
   }
 
   #selectmeny {
     display: none;
   }
 }
+
 #rubrik {
-  color: #ff0000;
+  color: #f00;
 }
 
 #shoptitle {
@@ -603,8 +607,7 @@ descbox_0 {
 }
 
 .title {
-  position: relative;
-  left: 20%;
+  text-align: center;
   font-size: 15px;
 }
 
@@ -623,7 +626,7 @@ descbox_0 {
   margin-left: 120px;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (width > 400px) and (width < 500px) {
   #ellerword {
     position: relative;
     bottom: 420px;
@@ -696,7 +699,8 @@ descbox_0 {
     padding: 10px;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 800px) {
+
+@media screen and (width > 500px) and (width < 800px) {
   #ellerword {
     position: relative;
     bottom: 420px;
@@ -760,6 +764,7 @@ descbox_0 {
     bottom: 390px;
   }
 }
+
 .socialbild {
   width: 1%;
   height: 1%;
@@ -778,11 +783,9 @@ descbox_0 {
 }
 
 .productimg {
-  width: 60%;
+  width: 100%;
   height: 60%;
   padding: 10px;
-  position: relative;
-  left: 10%;
 }
 
 #adbild {
@@ -793,7 +796,7 @@ descbox_0 {
   bottom: 20px;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (width > 400px) and (width < 500px) {
   .mini {
     position: relative;
     right: 18%;
@@ -810,7 +813,8 @@ descbox_0 {
     bottom: -20px;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 800px) {
+
+@media screen and (width > 500px) and (width < 800px) {
   .socialbild {
     width: 2%;
     height: 2%;
@@ -873,7 +877,7 @@ descbox_0 {
   width: 100%;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (width > 400px) and (width < 500px) {
   #spechr {
     display: none;
   }
@@ -895,7 +899,7 @@ descbox_0 {
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
+@media screen and (width > 500px) and (width < 800px) {
   .headhr1 {
     width: 720px;
   }
@@ -940,13 +944,14 @@ a {
   padding-left: 150px;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (width > 400px) and (width < 500px) {
   #korg {
     position: relative;
     left: 78%;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 800px) {
+
+@media screen and (width > 500px) and (width < 800px) {
   #korg {
     position: relative;
     left: 88%;
@@ -958,7 +963,7 @@ a {
   left: 20%;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (width > 400px) and (width < 500px) {
   #form1 {
     position: absolute;
     left: 20px;
@@ -970,7 +975,7 @@ a {
   right: -300px;
   bottom: 400px;
   font-size: 22px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman", serif;
 }
 
 #spectxt {
@@ -1025,7 +1030,7 @@ a {
   right: 15%;
   bottom: 400px;
   font-size: 22px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman", serif;
 }
 
 #deltext {
@@ -1043,12 +1048,12 @@ a {
   right: 46%;
 }
 
-descbox_0 p {
+.descbox_0 p {
   position: relative;
   right: 50px;
   bottom: 420px;
   font-size: 22px;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman", serif;
 }
 
 #numbertxt {
@@ -1128,10 +1133,11 @@ descbox_0 p {
   margin-left: 110px;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (width > 400px) and (width < 500px) {
   #deltext {
     position: relative;
     right: 240px;
+    left: -36%;
   }
 
   #pitch {
@@ -1171,11 +1177,6 @@ descbox_0 p {
     font-size: 15px;
   }
 
-  #deltext {
-    position: relative;
-    left: -36%;
-  }
-
   #pris_4 {
     position: relative;
     top: -450px;
@@ -1211,7 +1212,7 @@ descbox_0 p {
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
+@media screen and (width > 500px) and (width < 800px) {
   #pitch {
     width: 630px;
     position: relative;
@@ -1275,7 +1276,7 @@ descbox_0 p {
   left: 89%;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (width > 400px) and (width < 500px) {
   #selectmeny {
     display: block;
     width: 90%;
@@ -1295,7 +1296,7 @@ descbox_0 p {
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
+@media screen and (width > 500px) and (width < 800px) {
   #logobild {
     position: relative;
     left: 25%;
@@ -1307,17 +1308,17 @@ descbox_0 p {
 
 #sidfooter {
   background: #000;
-  color: #ffffff;
+  color: #fff;
   padding: 10px;
 }
 
 #sidfooter_0 {
   background: #000;
-  color: #ffffff;
+  color: #fff;
   padding: 10px;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (width > 400px) and (width < 500px) {
   #sidfooter a {
     padding: 5px;
     width: 88%;
@@ -1340,7 +1341,7 @@ descbox_0 p {
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
+@media screen and (width > 500px) and (width < 800px) {
   #sidfooter {
     width: 98%;
     height: 100%;
@@ -1365,7 +1366,7 @@ descbox_0 p {
   padding: 10px;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (width > 400px) and (width < 500px) {
   .navlinks {
     display: none;
   }
@@ -1379,7 +1380,7 @@ descbox_0 p {
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
+@media screen and (width > 500px) and (width < 800px) {
   #navigationslinks {
     display: block;
     position: relative;

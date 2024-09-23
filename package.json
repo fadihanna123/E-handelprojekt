@@ -1,26 +1,33 @@
 {
   "name": "E-handelprojekt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/fadihanna123/E-handelprojekt.git",
   "author": "Fadi Hanna <fadialias230@gmail.com>",
   "license": "MIT",
   "scripts": {
     "setup": "yarn --emoji --silent --ignore-scripts",
     "dev": "live-server .",
-    "lint": "eslint .",
-    "clear": "rimraf node_modules"
+    "lint": "eslint . && stylelint css/*.css",
+    "format": "prettier . -w",
+    "clear": "rimraf node_modules",
+    "build": "tsc",
+    "deploy": "yarn setup && gh-pages -d .",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.0",
     "@types/jquery": "^3.5.30",
     "eslint": "^9.11.0",
+    "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
     "htmlhint": "^1.1.4",
+    "husky": "^9.1.6",
     "prettier": "^3.3.3",
     "stylelint": "^16.9.0",
     "stylelint-config-recommended": "^14.0.1",
     "stylelint-config-standard": "^36.0.1",
     "typescript": "4.7.4",
     "typescript-eslint": "^8.6.0"
-  }
+  },
+  "homepage": "https://fadihanna123.github.io/E-handelprojekt"
 }
