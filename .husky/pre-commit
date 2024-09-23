@@ -1,0 +1,9 @@
+git fetch
+git fetch --all
+git fetch --prune
+git pull
+yarn setup
+yarn lint
+yarn format
+rimraf node_modules
+git add -A
