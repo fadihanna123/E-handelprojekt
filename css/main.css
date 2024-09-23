@@ -727,6 +727,7 @@ descbox_0 {
     position: relative;
     left: -50%;
   }
+
   #dec_0 p {
     position: relative;
     left: -15%;
@@ -820,6 +821,7 @@ descbox_0 {
     height: 300px;
   }
 }
+
 #varuhr {
   width: 10.5%;
   position: absolute;
@@ -892,6 +894,7 @@ descbox_0 {
     display: none;
   }
 }
+
 @media screen and (min-width: 500px) and (max-width: 800px) {
   .headhr1 {
     width: 720px;
@@ -909,16 +912,17 @@ descbox_0 {
     display: none;
   }
 }
+
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 #korg {
   position: relative;
   left: 94%;
   top: -100%;
-  color: #ffffff;
+  color: #fff;
   height: 6%;
   background: #000;
 }
@@ -929,7 +933,7 @@ a {
 }
 
 #click {
-  color: #0000ff;
+  color: #00f;
 }
 
 #linklist a {
@@ -948,6 +952,7 @@ a {
     left: 88%;
   }
 }
+
 #form1 {
   position: relative;
   left: 20%;
@@ -959,6 +964,7 @@ a {
     left: 20px;
   }
 }
+
 #spectxt_7 {
   position: relative;
   right: -300px;
@@ -1204,6 +1210,7 @@ descbox_0 p {
     bottom: 20px;
   }
 }
+
 @media screen and (min-width: 500px) and (max-width: 800px) {
   #pitch {
     width: 630px;
@@ -1238,6 +1245,7 @@ descbox_0 p {
     left: 75%;
   }
 }
+
 #selectmeny {
   display: none;
   width: 90%;
@@ -1286,6 +1294,7 @@ descbox_0 p {
     display: none;
   }
 }
+
 @media screen and (min-width: 500px) and (max-width: 800px) {
   #logobild {
     position: relative;
