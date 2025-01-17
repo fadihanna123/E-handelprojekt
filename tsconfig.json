@@ -9,7 +9,6 @@
     "skipLibCheck": true,
     "outDir": "js",
     "types": ["jquery"],
-    "typeRoots": ["node_modules/@types"],
     "baseUrl": ".",
     "sourceMap": false,
     "noUncheckedIndexedAccess": true,
