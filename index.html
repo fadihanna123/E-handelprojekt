@@ -34,26 +34,39 @@
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <title>Billigt & Begagnade - Startsida</title>
   </head>
   <body>
-    <div id="wrapper">
+    <div id="wrapper" class="w-full overflow-hidden p-auto">
+      >
       <header>
-        <a class="navlinks" href="login.html">Logga in</a>
-        <a class="navlinks" href="register.html">Skapa ett konto</a>
+        <a class="navlinks float-right p-2" href="login.html">Logga in</a>
+        <a class="navlinks float-right p-2" href="register.html"
+          >Skapa ett konto</a
+        >
         <br /><br />
-        <a href="#" id="korg">
+        <a
+          href="#"
+          id="korg"
+          class="relative left-[94%] top-[-100%] text-[#fff] h-[6%] bg-[#000]"
+        >
           Varukorg
           <img
             alt="varukorgsbild"
             onmouseover="showvaru()"
             onmouseout="hidevaru()"
             id="varukorgsbild"
+            class="w-[1%] h-[1%]"
             src="Images/shopping.png"
           /> </a
         ><br />
-        <div id="varu" onfocus="stop()">
+        <div
+          id="varu"
+          onfocus="stop()"
+          class="hidden bg-[#000] float-right text-[#fff] w-[12%] h-auto"
+        >
           Antal varor:
           <br />
           En penna
@@ -62,14 +75,14 @@
           Fidget Spinner
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           5 kr<br />
-          <hr id="varuhr" />
+          <hr id="varuhr" class="w-[10.5%] absolute left-[84.5%]" />
           <br />
           Total: &nbsp; 15 kr<br /><br />
           <form action="shopping.html">
-            <input type="button" id="varubtn" value="Gå vidare" />
+            <input type="button" class="float-right" value="Gå vidare" />
           </form>
         </div>
-        <nav id="navigationslinks">
+        <nav id="navigationslinks" class="hidden">
           &rsaquo;<b>Startsida</b>
           <a href="products.html">Produkter</a>
           <a href="shopping.html">Varukorg</a>
@@ -77,15 +90,31 @@
           <a href="about.html">Om oss</a>
         </nav>
         <a href="index.html">
-          <img id="logobild" alt="Logobild" src="Images/Logo.jpg" />
+          <img
+            class="relative left-[35%] w-[30%] h-[30%]"
+            id="logobild"
+            alt="Logobild"
+            src="Images/Logo.jpg"
+          />
         </a>
         <br />
-        <a href="#" id="searchlink" onclick="show()">Sök</a><br />
+        <a class="absolute left-[90%]" href="#" id="searchlink" onclick="show()"
+          >Sök</a
+        ><br />
         <form id="searchform" action="#">
-          <input id="searchtext" type="text" placeholder="Sök här" /><br />
+          <input
+            class="hidden relative left-[89%]"
+            id="searchtext"
+            type="text"
+            placeholder="Sök här"
+          /><br />
         </form>
         <form action="#">
-          <select id="selectmeny" onchange="window.location=this.value;">
+          <select
+            class="hidden w-[90%] ml-[20px]"
+            id="selectmeny"
+            onchange="window.location=this.value;"
+          >
             <option value="index.html" selected>Startsida</option>
             <option value="products.html">Produkter</option>
             <option value="shopping.html">Varukorg</option>
@@ -97,9 +126,9 @@
           <br />
         </form>
       </header>
-      <hr class="headhr" />
-      <div id="main">
-        <div id="leftmenu">
+      <hr class="headhr border-[#add8e6]" />
+      <div id="main" class="clear-both">
+        <div id="leftmenu" class="block p-2 text-xl">
           &rsaquo;<b>Startsida</b><br />
           <a href="products.html">Produkter</a><br />
           <a href="shopping.html">Varukorg</a><br />
@@ -107,45 +136,61 @@
           <a href="about.html">Om oss</a><br />
         </div>
         <br /><br />
-        <div id="ad">
+        <div
+          id="ad"
+          class="relative left-[40%] bottom-[60px] border border-solid border-[#000] w-[30%] h-[200px] text-xl"
+        >
           <a href="products.html">
-            <img src="Images/animation.gif" alt="animation" id="adbild" /><br />
-            <span id="products">Se produkterna&gt;&gt; </span></a
+            <img
+              src="Images/animation.gif"
+              alt="animation"
+              id="adbild"
+              class="w-[95%] h-[85%] absolute left-[10px] bottom-[20px]"
+            /><br />
+            <span id="products" class="relative left-[5%] top-[60%]"
+              >Se produkterna&gt;&gt;
+            </span></a
           ><br />
         </div>
-        <br /><br /><br /><br /><br /><br />
-
-        <p id="pitch">
-          <span id="rubrik">Billigast & Begagnade</span> är ett e-shopföretag
-          som säljer begagnade produkter.<br />
-          Vi lägger alltid till löpande olika produkter.
-          <br />
-          För att visa alla produkterna
-          <br />
-          <a href="products.html" id="click">Klicka här</a><br />
-          &larr; Välj någon länk från vänstra meny för att starta!
-        </p>
-      </div>
-      <hr id="spechr" />
-      <hr class="headhr" />
-
-      <footer id="sidfooter">
-        <div id="linklist">
-          <a href="job.html"> Jobba hos oss </a>
-          <a href="about.html"> Om oss </a>
-          <a href="contact.html"> Kontakta oss </a>
-          <a href="login.html"> Logga in </a>
-          <a href="register.html"> Skapa ett konto </a>
-          <a href="shopping.html"> Varukorg </a>
+        <div class="m-2">
+          <p
+            id="pitch"
+            class="sm:w-[600px] w-full h-[280px] border border-solid border-[#000] text-xl p-2"
+          >
+            <span id="rubrik" class="text-[#f00]">Billigast & Begagnade</span>
+            är ett e-shopföretag som säljer begagnade produkter.<br />
+            Vi lägger alltid till löpande olika produkter.
+            <br />
+            För att visa alla produkterna
+            <br />
+            <a href="products.html" id="click" class="text-[#00f]">Klicka här</a
+            ><br />
+            &larr; Välj någon länk från vänstra meny för att starta!
+          </p>
         </div>
-        <div id="sociallinks">
+      </div>
+      <hr
+        id="spechr"
+        class="inline h-[68%] w-[1px] border border-inset m-[5px] absolute left-[10%] bottom-[30px]"
+      />
+      <hr class="headhr" />
+      <footer id="sidfooter" class="bg-[#000] text-[#fff] p-2">
+        <div id="linklist">
+          <a class="pl-[150px]" href="job.html"> Jobba hos oss </a>
+          <a class="pl-[150px]" href="about.html"> Om oss </a>
+          <a class="pl-[150px]" href="contact.html"> Kontakta oss </a>
+          <a class="pl-[150px]" href="login.html"> Logga in </a>
+          <a class="pl-[150px]" href="register.html"> Skapa ett konto </a>
+          <a class="pl-[150px]" href="shopping.html"> Varukorg </a>
+        </div>
+        <div id="sociallinks" class="relative left-[85%] top-[-20px]">
           Följ oss
           <a href="#">
             <img
               title="Facebook"
               alt="Facebook"
               src="Images/fb.png"
-              class="socialbild"
+              class="socialbild w-[1px] h-[1px] sm:w-[2%] md:h-[2%]"
             />
           </a>
           <a href="#">
@@ -153,14 +198,14 @@
               title="Instagram"
               alt="Instagram"
               src="Images/Instagram.png"
-              class="socialbild"
+              class="socialbild w-[1px] h-[1px] sm:w-[2%] md:h-[2%]"
             />
           </a>
           <a href="#">
             <img
               title="Twitter"
               alt="Twitter"
-              class="socialbild"
+              class="socialbild w-[1px] h-[1px] sm:w-[2%] md:h-[2%]"
               src="Images/Twitter.gif"
             />
           </a>

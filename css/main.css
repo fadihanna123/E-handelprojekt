@@ -9,8 +9,7 @@
     to(#fff)
   );
   background-image: linear-gradient(#c0c0c0, #add8e6, #fff);
-  width: 100%;
-  overflow: hidden;
+  transition: 3s all;
 }
 
 #shopbox {
@@ -135,29 +134,7 @@
 }
 
 #varu {
-  display: none;
-  background: #000;
-  float: right;
-  color: #fff;
-  width: 12%;
-  height: auto;
   border-radius: 10px;
-}
-
-#leftmenu {
-  display: block;
-  padding: 10px;
-  font-size: 20px;
-}
-
-#main {
-  clear: both;
-}
-
-#sociallinks {
-  position: relative;
-  left: 85%;
-  top: -20px;
 }
 
 #sociallinks_0 {
@@ -309,7 +286,6 @@
       to(#00f)
     );
     background-image: linear-gradient(#f00, #ffc0cb, #00f);
-    padding: 10px;
   }
 
   #box {
@@ -344,14 +320,6 @@
     width: 83%;
     position: relative;
     left: 15%;
-  }
-
-  #main {
-    width: 75%;
-  }
-
-  #leftmenu {
-    display: none;
   }
 
   #varuborder {
@@ -438,10 +406,6 @@
   padding: 2px;
 }
 
-#varubtn {
-  float: right;
-}
-
 #addbtn {
   position: relative;
   left: 36%;
@@ -509,23 +473,10 @@
     left: 20%;
   }
 
-  #pren_0 {
-    position: relative;
-    left: 20%;
-  }
-
   #resetbtn {
     position: relative;
     left: 0;
   }
-
-  #selectmeny {
-    display: none;
-  }
-}
-
-#rubrik {
-  color: #f00;
 }
 
 #shoptitle {
@@ -765,11 +716,6 @@
   }
 }
 
-.socialbild {
-  width: 1%;
-  height: 1%;
-}
-
 .mini {
   width: 10%;
   height: 50px;
@@ -786,14 +732,6 @@
   width: 100%;
   height: 60%;
   padding: 10px;
-}
-
-#adbild {
-  width: 95%;
-  height: 85%;
-  position: absolute;
-  left: 10px;
-  bottom: 20px;
 }
 
 @media screen and (width > 400px) and (width < 500px) {
@@ -815,32 +753,10 @@
 }
 
 @media screen and (width > 500px) and (width < 800px) {
-  .socialbild {
-    width: 2%;
-    height: 2%;
-  }
-
   .produktsbild {
     width: 25%;
     height: 300px;
   }
-}
-
-#varuhr {
-  width: 10.5%;
-  position: absolute;
-  left: 84.5%;
-}
-
-#spechr {
-  display: inline;
-  height: 68%;
-  width: 1px;
-  border: 1px inset;
-  margin: 5px;
-  position: absolute;
-  left: 10%;
-  bottom: 30px;
 }
 
 #spechr2 {
@@ -867,10 +783,6 @@
   position: absolute;
   left: 10%;
   bottom: 100px;
-}
-
-.headhr {
-  border-color: #add8e6;
 }
 
 .headhr1 {
@@ -904,10 +816,6 @@
     width: 720px;
   }
 
-  #spechr {
-    display: none;
-  }
-
   #spechr1 {
     display: none;
   }
@@ -920,28 +828,6 @@
 a {
   text-decoration: none;
   color: #fff;
-}
-
-#korg {
-  position: relative;
-  left: 94%;
-  top: -100%;
-  color: #fff;
-  height: 6%;
-  background: #000;
-}
-
-#searchlink {
-  position: absolute;
-  left: 90%;
-}
-
-#click {
-  color: #00f;
-}
-
-#linklist a {
-  padding-left: 150px;
 }
 
 @media screen and (width > 400px) and (width < 500px) {
@@ -1098,15 +984,7 @@ a {
 }
 
 #pitch {
-  position: relative;
-  right: -5%;
-  bottom: 100px;
-  width: 40%;
-  height: 80%;
   margin: 0 auto;
-  border: 1px solid #000;
-  font-size: 20px;
-  padding: 10px;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -1138,10 +1016,6 @@ a {
     position: relative;
     right: 240px;
     left: -36%;
-  }
-
-  #pitch {
-    width: 95%;
   }
 
   #spectxt {
@@ -1240,40 +1114,10 @@ a {
     position: relative;
     left: -40%;
   }
-
-  #searchtext {
-    position: absolute;
-    left: 75%;
-  }
-}
-
-#selectmeny {
-  display: none;
-  width: 90%;
-  margin-left: 20px;
-}
-
-#navigationslinks {
-  display: none;
 }
 
 #logobild {
-  position: relative;
-  left: 35%;
-  width: 30%;
-  height: 30%;
   border-radius: 50px;
-}
-
-#varukorgsbild {
-  width: 1%;
-  height: 1%;
-}
-
-#searchtext {
-  display: none;
-  position: relative;
-  left: 89%;
 }
 
 @media screen and (width > 400px) and (width < 500px) {
@@ -1294,22 +1138,6 @@ a {
   #searchlink {
     display: none;
   }
-}
-
-@media screen and (width > 500px) and (width < 800px) {
-  #logobild {
-    position: relative;
-    left: 25%;
-    bottom: 30px;
-    width: 40%;
-    height: 40%;
-  }
-}
-
-#sidfooter {
-  background: #000;
-  color: #fff;
-  padding: 10px;
 }
 
 #sidfooter_0 {
@@ -1342,15 +1170,6 @@ a {
 }
 
 @media screen and (width > 500px) and (width < 800px) {
-  #sidfooter {
-    width: 98%;
-    height: 100%;
-  }
-
-  #sidfooter a {
-    padding: 1px;
-  }
-
   #sidfooter_0 {
     width: 700px;
     height: 100%;
@@ -1361,11 +1180,6 @@ a {
   }
 }
 
-.navlinks {
-  float: right;
-  padding: 10px;
-}
-
 @media screen and (width > 400px) and (width < 500px) {
   .navlinks {
     display: none;
@@ -1373,19 +1187,6 @@ a {
 
   #navigationslinks {
     display: none;
-  }
-
-  #navigationslinks a {
-    padding: 10px;
-  }
-}
-
-@media screen and (width > 500px) and (width < 800px) {
-  #navigationslinks {
-    display: block;
-    position: relative;
-    top: 87px;
-    left: 20px;
   }
 
   #navigationslinks a {
