@@ -6,11 +6,11 @@
   "license": "MIT",
   "scripts": {
     "setup": "yarn --emoji --silent --ignore-scripts",
-    "dev": "live-server .",
+    "dev": "yarn build && live-server .",
     "lint": "eslint . && stylelint css/*.css && htmlhint **/*.html && yarn type-check",
     "format": "prettier . -w",
     "prebuild": "rimraf js",
-    "build": "yarn prebuild && esbuild ts/* --minify --outdir=js",
+    "build": "yarn prebuild && esbuild ts/* --minify --outdir=js --sourcemap",
     "type-check": "tsc --noEmit",
     "prepare": "husky",
     "clear": "rimraf node_modules"

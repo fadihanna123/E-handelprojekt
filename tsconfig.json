@@ -10,11 +10,11 @@
     "outDir": "js",
     "types": ["jquery"],
     "baseUrl": ".",
-    "sourceMap": false,
+    "sourceMap": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitOverride": true
   },
-  "include": ["ts"]
+  "include": ["**/*.ts"]
 }
