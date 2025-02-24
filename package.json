@@ -1,37 +1,37 @@
 {
   "name": "E-handelprojekt",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "repository": "https://github.com/fadihanna123/E-handelprojekt.git",
   "author": "Fadi Hanna <fadialias230@gmail.com>",
   "license": "MIT",
   "scripts": {
     "setup": "yarn --emoji --silent --ignore-scripts",
-    "dev": "yarn build && live-server .",
-    "lint": "eslint . && stylelint css/*.css && htmlhint **/*.html && yarn type-check",
+    "dev": "yarn build && live-server ./",
+    "lint": "eslint ./ && stylelint css/*.css && htmlhint **/*.html && yarn type-check",
     "format": "prettier . -w",
     "prebuild": "rimraf js",
-    "build": "yarn prebuild && esbuild ts/* --minify --outdir=js --sourcemap",
+    "build": "yarn prebuild && esbuild ./ts/* --minify --outdir=js --sourcemap",
     "type-check": "tsc --noEmit",
     "prepare": "husky",
-    "clear": "rimraf node_modules"
+    "clear": "rimraf ./node_modules"
   },
   "devDependencies": {
-    "@eslint/js": "9.19.0",
+    "@eslint/js": "9.21.0",
     "@types/jquery": "3.5.32",
-    "esbuild": "0.24.2",
-    "eslint": "9.19.0",
-    "eslint-plugin-html": "^8.1.2",
-    "globals": "15.14.0",
+    "esbuild": "0.25.0",
+    "eslint": "9.21.0",
+    "eslint-plugin-html": "8.1.2",
+    "globals": "16.0.0",
     "htmlhint": "1.1.4",
     "husky": "9.1.7",
-    "live-server": "^1.2.2",
-    "prettier": "3.4.2",
-    "rimraf": "^6.0.1",
+    "live-server": "1.2.2",
+    "prettier": "3.5.2",
+    "rimraf": "6.0.1",
     "stylelint": "16.14.1",
     "stylelint-config-recommended": "15.0.0",
     "stylelint-config-standard": "37.0.0",
     "typescript": "5.7.3",
-    "typescript-eslint": "8.22.0"
+    "typescript-eslint": "8.25.0"
   },
   "homepage": "https://fadihanna123.github.io/E-handelprojekt"
 }
