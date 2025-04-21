@@ -59,7 +59,7 @@
           <input id="searchtext" type="text" placeholder="Sök här" /><br />
         </form>
         <form action="#">
-          <select id="selectmeny" onchange="window.location=this.value;">
+          <select id="selectmeny" onchange="validateAndRedirect(this.value)">
             <option value="index.html">Startsida</option>
             <option value="products.html">Produkter</option>
             <option value="shopping.html">Varukorg</option>
