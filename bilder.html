@@ -38,7 +38,11 @@
       type="image/png"
     />
   </head>
-  <body>
+  <body onload="initPage()">
+    <div id="pageLoading">
+      <span class="loader"></span>
+    </div>
+
     <h1>jQuery</h1>
     <button onclick="myFunction()">Klicka här</button>
 

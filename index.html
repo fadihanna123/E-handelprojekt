@@ -35,12 +35,15 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <title>Billigt & Begagnade - Startsida</title>
   </head>
-  <body>
+  <body onload="initPage()">
+    <div id="pageLoading">
+      <span class="loader"></span>
+    </div>
+
     <div id="wrapper" class="w-full overflow-hidden p-auto">
-      >
       <header>
         <a class="navlinks float-right p-2" href="login.html">Logga in</a>
         <a class="navlinks float-right p-2" href="register.html"

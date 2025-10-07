@@ -1,6 +1,16 @@
 const showvaru = () => $('#searchtext').fadeToggle(2000);
 const hidevaru = () => $('#varu').show(1000);
 
+const pageLoadingEl = document.getElementById('pageLoading')! as HTMLDivElement;
+const containerEl = document.getElementById('wrapper')! as HTMLDivElement;
+
+const initPage = () => {
+  setTimeout(() => {
+    pageLoadingEl.style.display = 'none';
+    containerEl.style.display = 'block';
+  }, 3000);
+};
+
 const validateAndNavigate = (value: string) => {
   const allowedUrls = [
     'index.html',
