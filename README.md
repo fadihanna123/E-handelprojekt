@@ -95,10 +95,14 @@ yarn format
 - `yarn type-check` - Run TypeScript type checking
 - `yarn clear` - Remove node_modules
 
+## Screenshot
+![Screenshot](screenshot.png "Screenshot")
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👥 Authors
+
 
 - Fadi Hanna - [GitHub](https://github.com/fadihanna123)
